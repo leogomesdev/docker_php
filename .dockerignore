@@ -1,0 +1,7 @@
+.env.example
+phpunit.xml.example
+pre-commit.example
+docker-compose.yml.*
+readme.md
+docs
+config/docker
