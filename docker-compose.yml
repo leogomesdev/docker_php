@@ -33,8 +33,8 @@ postgres:
   container_name: postgres
   restart: always
   environment:
-   - POSTGRES_USER=webadm
-   - POSTGRES_PASSWORD=A123456
+   - POSTGRES_USER=app
+   - POSTGRES_PASSWORD=123456A
   ports:
    - "5432:5432"
   volumes:
@@ -45,10 +45,10 @@ mysql:
   container_name: mysql
   restart: always
   environment:
-   - MYSQL_ROOT_PASSWORD=A123456
-   - MYSQL_DATABASE=webadm
-   - MYSQL_USER=webadm
-   - MYSQL_PASSWORD=A123456
+   - MYSQL_ROOT_PASSWORD=123456A
+   - MYSQL_DATABASE=app
+   - MYSQL_USER=app
+   - MYSQL_PASSWORD=123456A
   ports:
    - "3306:3306"
   volumes:
@@ -66,8 +66,8 @@ pgadmin:
   container_name: pgadmin
   restart: always
   environment:
-    - DEFAULT_USER=webadm
-    - DEFAULT_PASSWORD:A123456
+    - DEFAULT_USER=app
+    - DEFAULT_PASSWORD:123456A
   ports:
    - "5050:5050"
   volumes:
